@@ -1,3 +1,5 @@
+"""Model class to define the database table for entries"""
+
 from django.db import models
 from django.utils import timezone
 
@@ -10,4 +12,5 @@ class Entry(models.Model):
         return self.title
 
     class Meta:
+        """define plural for the class"""
         verbose_name_plural = "Entries"
